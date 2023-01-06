@@ -12,7 +12,7 @@ public class Tuyau extends Sprite {
         this.largeur = LARGEUR_TUYAU;
         this.hauteur = HAUTEUR_TUYAU;
         this.couleur = new Color(60, 134, 5);
-        setVitesseTuyau(-3);
+        setVitesseTuyau(-2);
     }
 
     public int getLargeur() {
@@ -40,12 +40,11 @@ public class Tuyau extends Sprite {
         if(x <= -LARGEUR_TUYAU) {
             this.x = Main.LARGEUR;
             Random random = new Random();
-            this.hauteur = random.nextInt(50, 350);
+            this.hauteur = random.nextInt(100, 300);
             if(this.y >= 400){
                 this.y = random.nextInt(400, 550);
                 this.hauteur = 600;
             }
-
         }
     }
 
@@ -55,6 +54,7 @@ public class Tuyau extends Sprite {
         }
         this.vitesseTuyau = vitesseTuyau;
     }
+
     @Override
     public void dessiner(Graphics2D dessin) {
         dessin.setColor(couleur);

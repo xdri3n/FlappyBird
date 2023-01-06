@@ -42,19 +42,12 @@ public class Flappy extends Sprite {
         this.vitesseFlappy += 5;
     }
 
-    public boolean collision(Tuyau tuyau){
-        if(getY() <= 0 ){
-            Rectangle flappyHit = new Rectangle(getX(), getY(), getLargeur(), getHauteur());
-            Rectangle tuyauHit = new Rectangle(tuyau.x, tuyau.y, tuyau.largeur, tuyau.hauteur);
-            System.out.println("*** FLAPPY ***");
-            System.out.println(flappyHit);
-            System.out.println("*** TUYAU ***");
-            System.out.println(tuyauHit);
-            if(flappyHit.intersects(tuyauHit)) {
-                System.out.println("Tu as touché un tuyau !!");
-                return true;
-            }
-            return false;
+    public boolean collision(Tuyau tuyau) {
+        Rectangle flappyHit = new Rectangle(this.x, this.y, this.largeur, this.hauteur);
+        Rectangle tuyauHit = new Rectangle(tuyau.x, tuyau.y, tuyau.largeur, tuyau.hauteur);
+        if(flappyHit.intersects(tuyauHit)) {
+            System.out.println("Tu as touché un tuyau !!");
+            return true;
         }
         return false;
     }

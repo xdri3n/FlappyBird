@@ -55,8 +55,8 @@ public class Main extends Canvas {
     }
 
     public void run() throws InterruptedException {
-        Tuyau tuyauHaut = new Tuyau(250, 0);
-        Tuyau tuyauBas = new Tuyau(250, 400);
+        Tuyau tuyauHaut = new Tuyau(300, 0);
+        Tuyau tuyauBas = new Tuyau(300, 400);
 
         listeSprite.add(flappy);
 
@@ -77,9 +77,10 @@ public class Main extends Canvas {
                 sprite.dessiner(dessin);
             }
 
+            flappy.mouvement();
             tuyauHaut.mouvement();
             tuyauBas.mouvement();
-            flappy.mouvement();
+
             if(flappy.collision(tuyauHaut) || flappy.collision(tuyauBas)) {
                 startGame = false;
                 int response = JOptionPane.showConfirmDialog(null, "*** Game OVER *** \n Refaire une partie ?", "Flappy Bird", JOptionPane.YES_NO_OPTION);
