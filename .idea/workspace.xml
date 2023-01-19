@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0714c61c-cfc4-4ef6-9eed-a5336e350e2d" name="Changes" comment="(flappybird) First Commit&#10;Dans ce projet j'ai crée plusieurs class&#10;- Main&#10;- Flappy&#10;- Tuyau&#10;- Sprite&#10;&#10;Je gère l'affiche de mes différents objets&#10;Je gère le déplacement des tuyaux&#10;Je gère une fenêtre qui confirmera ou non la relance d'une partie&#10;&#10;En cours j'ai un problème avec mes collisions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tuyau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tuyau.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -12,7 +12,7 @@ public class Tuyau extends Sprite {
         this.largeur = LARGEUR_TUYAU;
         this.hauteur = HAUTEUR_TUYAU;
         this.couleur = new Color(60, 134, 5);
-        setVitesseTuyau(-2);
+        setVitesseTuyau(-4);
     }
 
     public int getLargeur() {
